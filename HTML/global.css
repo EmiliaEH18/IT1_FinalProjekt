@@ -1,0 +1,77 @@
+:root {
+    --bakgrunnfarge-bla: rgb(26, 36, 74);
+    --bla-hover: rgb(95, 115, 193);
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: auto;
+    padding: 10px;
+
+}
+
+.top_container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+    transition: background-color 0.5s ease;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i {
+    font-size: 25px;
+    transition: background-color 0.5s ease;
+    padding: 10px;
+    display: inline-block;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+
+a:hover {
+    background-color: var(--bla-hover);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+//*i:hover {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+*/

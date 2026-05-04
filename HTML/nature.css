@@ -1,0 +1,234 @@
+:root {
+    --background-green-1: rgb(130, 186, 169);
+    --marker-green: rgb(172, 241, 172);
+    --background-green-2: rgb(96, 135, 123);
+    --hover-nature: rgb(54, 105, 90);
+    --background-green-3: rgb(53, 101, 87);
+    --box-background: rgb(42, 152, 121);
+    --dark-green: rgb(12, 70, 53);
+
+
+
+
+}
+
+.first,
+.second,
+.third {
+    background-color: var(--background-green-1);
+}
+
+.first_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 105vh;
+    margin: auto;
+    position: relative;
+}
+
+.first_container>img {
+    width: 47%;
+    position: absolute;
+    right: 0;
+
+}
+
+.marker {
+    background-color: var(--marker-green);
+}
+
+h1 {
+    z-index: 3;
+    position: absolute;
+    left: 15%;
+    right: 25%;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    /* 2px:hvor lang skygge flyttes til høyre eller venstre
+    2px: hvor langt skyggen flyttes opp eller ned
+    6px: hvor myk/skarp skyggen blir (10px veldig myk, 0 veldig skarp
+    000: red, green, blue
+    0.6: gjennomsiktighet*/
+}
+
+.info_nature {
+    max-width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.third {
+    height: 90vh;
+}
+
+.third_container {
+    background-color: var(--background-green-2);
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.third_container>img {
+    width: 40%;
+}
+
+.third_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 30px;
+    color: white;
+    letter-spacing: 1.2px;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.third_info>p {
+    line-height: 1.5;
+    text-align: center;
+    font-size: 18px;
+}
+
+.third_info>a>button {
+    padding: 10px;
+    background-color: var(--background-green-1);
+    border: 2px solid var(--marker-green);
+    color: white;
+    letter-spacing: 1.2px;
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.DNT_btn:hover {
+    background-color: var(--hover-nature);
+
+}
+
+.fourth {
+    height: 90vh;
+    background-color: var(--background-green-3);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.info_fourth {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.info_fourth h3 {
+    font-size: 40px;
+}
+
+.info_fourth p {
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+}
+
+.unactive {
+    display: none;
+}
+
+.info_fourth button {
+    padding: 10px;
+    width: 40%;
+    background-color: var(--box-background);
+    border: 2px solid var(--background-green-1);
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    color: var(--dark-green);
+    transition: transform 0.4s ease;
+
+}
+
+.info_fourth button:hover {
+    transform: scale(1.1);
+}
+
+.fourth>img {
+    width: 27%;
+    display: block;
+    margin-right: -200px;
+    z-index: 3;
+
+}
+
+
+
+.right_container {
+    position: relative;
+    align-items: center;
+    display: flex;
+    width: 40%;
+}
+
+.possibilities_container {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.traningpossibilities {
+    background-color: var(--box-background);
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px;
+    padding-left: 27%;
+    padding-right: 27%;
+    z-index: 1;
+}
+
+.possibilities_container h3,
+.possibilities_container i {
+    margin: 0;
+}
+
+.possibilities_container h3 {
+    font-size: 30px;
+    letter-spacing: 1.2px;
+    color: var(--dark-green);
+}
+
+
+
+
+.possibilities_container>i {
+    color: var(--background-green-3);
+}
