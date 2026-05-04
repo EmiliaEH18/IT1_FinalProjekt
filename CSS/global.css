@@ -60,7 +60,8 @@ header {
 }
 
 
-a:hover {
+nav a:hover,
+.top a:hover {
     background-color: var(--bla-hover);
     padding: 10px;
     border-radius: 10px;

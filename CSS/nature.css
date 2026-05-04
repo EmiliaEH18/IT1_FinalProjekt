@@ -119,11 +119,12 @@ h2 {
     font-size: 15px;
     padding-left: 30px;
     padding-right: 30px;
+    transition: transform 0.7s ease;
 }
 
 .DNT_btn:hover {
-    background-color: var(--hover-nature);
-
+    transform: scale(1.1);
+  
 }
 
 .fourth {
@@ -156,7 +157,8 @@ h2 {
 }
 
 .unactive {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
 }
 
 .info_fourth button {
@@ -169,6 +171,10 @@ h2 {
     color: var(--dark-green);
     transition: transform 0.4s ease;
 
+}
+
+.smooth {
+    transition: transform 0.9s ease-in;
 }
 
 .info_fourth button:hover {
