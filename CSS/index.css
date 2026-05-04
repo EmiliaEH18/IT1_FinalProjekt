@@ -132,10 +132,95 @@ h1 {
     align-items: center;
 }
 
-h2 {
+.goals_container>h2 {
     background: rgba(255, 255, 255, 0.7);
     width: 20%;
     text-align: center;
     padding: 20px;
     font-size: 50px;
+}
+
+.staff {
+    background-color: var(--bakgrunnfarge-bla);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.staff_container {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_staff {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 55%;
+    gap: 20px;
+}
+
+h5 {
+    font-size: 20px;
+    letter-spacing: 1.4px;
+    color: var(--bla-hover);
+}
+
+.staff_h2 {
+    font-size: 60px;
+    width: 70%;
+}
+
+.about_staff>p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.staff_pictures {
+    position: relative;
+}
+
+.container_pictures {
+    position: absolute;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_pictures>span {
+    background-color: var(--bla-hover);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+    margin-top: -20px;
+    border-radius: 10px;
+}
+
+.container_pictures img {
+    max-width: 250px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.first {
+    top: 200px;
+    right: 200px;
+}
+
+.second {
+    top: -70px;
+    right: 250px;
+}
+
+.third {
+    right: 0;
+    top: 30px;
 }
