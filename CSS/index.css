@@ -5,7 +5,7 @@
 }
 
 header {
-    background-image: url(background_2.jpeg);
+    background-image: url(../bilder/background_2.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -117,7 +117,7 @@ h1 {
 }
 
 #goals {
-    background-image: url(logo_about.png);
+    background-image: url(../bilder/logo_about.png);
     height: 100vh;
     background-position: center;
     background-size: cover;
