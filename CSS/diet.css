@@ -1,19 +1,77 @@
+:root {
+    --background-main: rgb(252, 255, 215);
+    --yellow-dark: rgb(226, 208, 71);
+    --yellow-text: rgb(215, 203, 111);
+    --light-yellow: rgb(241, 244, 159);
+
+
+
+
+}
+
+body {
+    background-color: var(--background-main);
+}
+
+p {
+    letter-spacing: 1.2px;
+    line-height: 1.5;
+}
+
 .hero {
     height: 100vh;
     background-image: url(../bilder/fruit_background.avif);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background:
-        linear-gradient(to bottom, transparent 70%, #ffffff), ;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 h1 {
-    color: white;
+    color: var(--background-main);
     font-size: 250px;
     letter-spacing: 15.5px;
-     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.diet_plate_section {
+    height: 100vh;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+
+}
+
+.diet_plate_section img {
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    max-width: 45%;
+}
+
+.diet_plate_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 45%;
+    gap: 30px;
+}
+
+.diet_plate_info h2 {
+    font-size: 60px;
+    color: var(--yellow-dark);
+}
+
+.diet_plate_info p {
+    font-size: 22px;
+    color: var(--yellow-text);
+}
+
+.diet_plate_btn {
+    background-color: var(--yellow-dark);
+    border: 2px solid var(--light-yellow);
+    color: ;
 }
