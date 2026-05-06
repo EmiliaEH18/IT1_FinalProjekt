@@ -78,7 +78,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    height: 80vh;
+    min-height: 80vh;
     padding-top: 8%;
 }
 
@@ -119,7 +119,7 @@ h1 {
 
 .staff {
     background-color: var(--bakgrunnfarge-bla);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,4 +200,123 @@ h5 {
 .third {
     right: 0;
     top: 30px;
+}
+
+@media (width<1200px) {
+
+
+    .about_container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+    .about_content {
+        border-radius: 30px;
+    }
+
+    .about_container img {
+        border-radius: 30px;
+        max-width: 100%;
+    }
+}
+
+@media (width<1140px) {
+    .staff_container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .staff {
+        min-height: 180vh;
+    }
+
+    .staff_pictures {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+    }
+
+    .container_pictures {
+        position: static;
+    }
+
+    .about_staff {
+        width: 100%;
+    }
+}
+
+@media (width<900px) {
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+
+    }
+
+    .hero>img {
+        max-width: 40%;
+    }
+}
+
+@media (width<600px) {
+    header {
+        height: 80vh;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .about_content>p {
+        font-size: 15px;
+    }
+}
+
+@media (width<450px) {
+
+    .about_container {
+        min-height: 60vh;
+    }
+
+    .about_content {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .about_content>p {
+        font-size: 10px;
+    }
+
+    .staff h2 {
+        font-size: 25px;
+    }
+
+    .about_staff>p {
+        font-size: 10px;
+    }
+
+    .container_pictures img {
+        max-width: 150px;
+    }
+
+    .staff {
+        min-height: 100vh;
+    }
+
+    h5 {
+        font-size: 13px;
+    }
 }
