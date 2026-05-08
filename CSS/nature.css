@@ -124,16 +124,22 @@ h2 {
 
 .DNT_btn:hover {
     transform: scale(1.1);
-  
+
 }
 
 .fourth {
-    height: 90vh;
+    height: 100vh;
     background-color: var(--background-green-3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.fourth_container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
 }
 
 .info_fourth {
@@ -181,7 +187,7 @@ h2 {
     transform: scale(1.1);
 }
 
-.fourth>img {
+.fourth_container>img {
     width: 27%;
     display: block;
     margin-right: -200px;
@@ -237,4 +243,19 @@ h2 {
 
 .possibilities_container>i {
     color: var(--background-green-3);
+}
+
+.bycicle_container {
+    position: relative;
+}
+
+.bycicle_container>img {
+    max-width: 100px;
+    transform: scaleX(-1);
+    position: absolute;
+    bottom: -10;
+}
+
+.fifth {
+    height: 100vh;
 }

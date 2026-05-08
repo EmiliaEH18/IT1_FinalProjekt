@@ -1,4 +1,4 @@
-const buttonElm = document.querySelector(".info_fourth button")
+const buttonElm = document.querySelector(".diet_plate_btn")
 const unactiveP = document.querySelector(".unactive")
 buttonElm.addEventListener("click",
     function klikk() {
@@ -13,21 +13,3 @@ buttonElm.addEventListener("click",
 
     }
 )
-
-const bycicleElm = document.querySelector(".bycicle_container>img ")
-let x = 0
-
-function sykkelmove() {
-    if (x < window.innerWidth) {
-        x += 4;
-    }
-
-    else {
-        x = -300
-    }
-    bycicleElm.style.left = x + 'px'
-}
-
-setInterval(sykkelmove, 10)
-
-
