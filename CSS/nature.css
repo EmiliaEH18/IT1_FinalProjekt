@@ -16,21 +16,23 @@
 .second,
 .third {
     background-color: var(--background-green-1);
+    width: 100%;
 }
 
 .first_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 105vh;
+    max-height: 105vh;
     margin: auto;
-    position: relative;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
 }
 
 .first_container>img {
     width: 47%;
-    position: absolute;
-    right: 0;
+
 
 }
 
@@ -40,9 +42,8 @@
 
 h1 {
     z-index: 3;
-    position: absolute;
-    left: 15%;
-    right: 25%;
+    margin-right: -27%;
+    margin-left: 15%;
     font-size: 60px;
     color: white;
     text-align: center;
@@ -61,7 +62,7 @@ h1 {
     font-size: 25px;
     line-height: 1.5;
     letter-spacing: 1.2px;
-    height: 60vh;
+    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +71,9 @@ h1 {
 }
 
 .third {
-    height: 90vh;
+    min-height: 90vh;
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 .third_container {
@@ -128,7 +131,7 @@ h2 {
 }
 
 .fourth {
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--background-green-3);
     display: flex;
     flex-direction: column;
@@ -201,7 +204,9 @@ h2 {
     position: relative;
     align-items: center;
     display: flex;
-    width: 40%;
+    padding-left: 20%;
+    padding-right: 20%;
+    max-width: 40%;
 }
 
 .possibilities_container {
@@ -258,4 +263,97 @@ h2 {
 
 .fifth {
     height: 100vh;
+}
+
+@media (width<1160px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .third_info>p {
+        font-size: 15px;
+    }
+
+    .fourth_container {
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media (width<1020px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .info_nature {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .third_container {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+
+}
+
+@media (width<880px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+}
+
+@media (width<650px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .third_info>a>button {
+        font-size: 12px;
+    }
+
+    .info_nature {
+        font-size: 17px;
+    }
+
+    .third_info {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (width<535px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        17px
+    }
+
+    .info_nature {
+        font-size: 15px;
+    }
+
+    .third_info {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
