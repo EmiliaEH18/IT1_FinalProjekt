@@ -162,7 +162,7 @@ h2 {
     line-height: 1.5;
 }
 
-.unactive {
+.unactive_txt {
     max-height: 0;
     overflow: hidden;
 }
@@ -259,4 +259,3 @@ h2 {
 .fifth {
     height: 100vh;
 }
-

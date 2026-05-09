@@ -1,9 +1,9 @@
 const buttonElm = document.querySelector(".info_fourth button")
-const unactiveP = document.querySelector(".unactive")
+const unactiveP = document.querySelector(".unactive_txt")
 buttonElm.addEventListener("click",
     function klikk() {
-        unactiveP.classList.toggle("unactive")
-        if (unactiveP.classList.contains("unactive")) {
+        unactiveP.classList.toggle("unactive_txt")
+        if (unactiveP.classList.contains("unactive_txt")) {
             buttonElm.innerHTML = "READ MORE"
         }
 
