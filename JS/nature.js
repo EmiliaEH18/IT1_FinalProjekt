@@ -15,19 +15,23 @@ buttonElm.addEventListener("click",
 )
 
 const bycicleElm = document.querySelector(".bycicle_container>img ")
+const container = document.querySelector(".bycicle_container")
 let x = 0
 
+
+
+
 function sykkelmove() {
-    if (x < window.innerWidth) {
-        x += 4;
+    const screenWidth = container.offsetWidth
+    const bikeWidth = bycicleElm.offsetWidth
+
+    x += 4
+
+    if (x > screenWidth) {
+        x = -bikeWidth
     }
 
-    else {
-        x = -300
-    }
-    bycicleElm.style.left = x + 'px'
+    bycicleElm.style.left = x + "px"
 }
 
 setInterval(sykkelmove, 10)
-
-
