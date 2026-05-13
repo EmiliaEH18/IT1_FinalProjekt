@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+
+
 :root {
     --background-main: rgb(252, 255, 215);
     --yellow-dark: rgb(226, 208, 71);
@@ -5,12 +8,6 @@
     --light-yellow: rgb(241, 244, 159);
     --dark-brown: rgb(72, 27, 27);
     --lighter-brown: rgb(79, 48, 48);
-
-
-
-
-
-
 }
 
 body {
@@ -69,6 +66,14 @@ h2 {
     font-size: 60px;
     color: var(--yellow-dark);
     letter-spacing: 1px;
+}
+
+.lokke_font {
+    font-family: "Rouge Script", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 200px;
+    font-style: italic;
 }
 
 .diet_plate_info p {
@@ -173,6 +178,7 @@ h2 {
     max-width: 90%;
     margin: auto;
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .recipies_container {
