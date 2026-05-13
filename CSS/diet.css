@@ -24,7 +24,7 @@ button {
     height: 100vh;
     background-image: url(../bilder/fruit_background.avif);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
@@ -39,12 +39,13 @@ h1 {
 }
 
 .diet_plate_section {
-    height: 100vh;
+    min-height: 100vh;
     max-width: 90%;
     display: flex;
     justify-content: space-between;
     margin: auto;
     align-items: center;
+    padding-top: 50px;
 
 }
 
@@ -252,4 +253,68 @@ h6 {
 
 .info_recipie>a {
     padding: 0;
+}
+
+@media (width<1000px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    .diet_plate_info p {
+        font-size: 20px;
+    }
+
+    .diet_plate_btn {
+        font-size: 15px;
+        width: 50%;
+    }
+}
+
+@media (width<800px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    .diet_plate_info p {
+        font-size: 17px;
+    }
+
+    .diet_plate_btn {
+        font-size: 10px;
+        width: 50%;
+    }
+}
+
+@media (width<720px) {
+    h1 {
+        font-size: 200px;
+    }
+
+    .diet_plate_section {
+        flex-direction: column;
+        gap: 30px;
+        width: 80%;
+    }
+
+    .diet_plate_section>img {
+        max-width: 100%;
+    }
+
+    .diet_plate_info {
+        width: 100%;
+        margin: auto;
+        align-items: center;
+    }
+}
+
+@media (width<600px) {
+    h1 {
+        font-size: 150px;
+    }
+}
+
+@media (width<510px) {
+    h1 {
+        font-size: 100px;
+    }
 }
