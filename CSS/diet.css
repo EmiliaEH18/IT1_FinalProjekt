@@ -3,6 +3,10 @@
     --yellow-dark: rgb(226, 208, 71);
     --yellow-text: rgb(215, 203, 111);
     --light-yellow: rgb(241, 244, 159);
+    --dark-brown: rgb(72, 27, 27);
+    --lighter-brown: rgb(79, 48, 48);
+
+
 
 
 
@@ -61,9 +65,10 @@ h1 {
     gap: 30px;
 }
 
-.diet_plate_info h2 {
+h2 {
     font-size: 60px;
     color: var(--yellow-dark);
+    letter-spacing: 1px;
 }
 
 .diet_plate_info p {
@@ -161,4 +166,84 @@ h1 {
 
 .grey {
     filter: grayscale(100%);
+}
+
+.recipies {
+    min-height: 130vh;
+    max-width: 90%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.recipies_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.recipies_bigcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+
+}
+
+.recipies_smallcontainer img {
+    width: 100%;
+    aspect-ratio: 11 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 5;
+}
+
+.recipies_smallcontainer {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.recipies_smallcontainer:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.info_recipie {
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    padding-top: 20px;
+    align-items: flex-start;
+}
+
+.info_recipie>a>h4 {
+    letter-spacing: 1px;
+    transition: transform 0.3s ease;
+    font-size: 20px;
+    color: var(--dark-brown);
+
+}
+
+h6 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: var(--lighter-brown);
+}
+
+
+.info_recipie>a>h4:hover {
+    text-decoration: underline;
+    transform: scale(1.05);
+}
+
+.info_recipie>a {
+    padding: 0;
 }
