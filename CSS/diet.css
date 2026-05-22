@@ -122,7 +122,6 @@ h2 {
 .bilde_wrapper img {
     width: 100%;
     aspect-ratio: 1/1;
-
     object-fit: cover;
 }
 
@@ -211,6 +210,8 @@ h2 {
     flex-direction: column;
     transition: transform 0.3s ease;
     border-radius: 10px;
+    height: 100%;
+    align-self: start;
 }
 
 .recipies_smallcontainer:hover {
@@ -229,6 +230,7 @@ h2 {
     border-radius: 10px;
     padding-top: 20px;
     align-items: flex-start;
+    flex: 1;
 }
 
 .info_recipie>a>h4 {
@@ -255,6 +257,10 @@ h6 {
     padding: 0;
 }
 
+footer {
+    background-color: var(--light-yellow);
+}
+
 @media (width<1000px) {
     h2 {
         font-size: 40px;
@@ -267,6 +273,14 @@ h6 {
     .diet_plate_btn {
         font-size: 15px;
         width: 50%;
+    }
+
+    .info_recipie>a>h4 {
+        font-size: 15px;
+    }
+
+    .lokke_font {
+        font-size: 200px;
     }
 }
 
@@ -283,6 +297,16 @@ h6 {
         font-size: 10px;
         width: 50%;
     }
+
+    .info_recipie>a>h4 {
+        font-size: 10px;
+    }
+
+    .lokke_font {
+        font-size: 150px;
+    }
+
+
 }
 
 @media (width<720px) {
@@ -305,12 +329,29 @@ h6 {
         margin: auto;
         align-items: center;
     }
+
+    .lokke_font {
+        font-size: 100px;
+    }
 }
 
 @media (width<600px) {
     h1 {
         font-size: 150px;
     }
+
+    .recipies_bigcontainer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .info_recipie>a>h4 {
+        font-size: 15px;
+    }
+
+
+
+
 }
 
 @media (width<510px) {
