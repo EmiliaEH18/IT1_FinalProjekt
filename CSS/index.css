@@ -130,6 +130,7 @@ h1 {
     margin: auto;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 150px;
 }
 
 .about_staff {
@@ -207,6 +208,17 @@ h5 {
     right: 0;
     top: 30px;
 }
+
+footer {
+    background-color: var(--bla-hover);
+}
+
+
+.footer_container h5 {
+    color: black;
+}
+
+
 
 @media (width<1200px) {
 
