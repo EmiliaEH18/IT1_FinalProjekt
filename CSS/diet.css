@@ -114,6 +114,8 @@ h2 {
     margin: auto;
     justify-content: center;
     gap: 50px;
+    padding-bottom: 200px;
+    padding-top: 200px;
 }
 
 .balance>img {
@@ -148,6 +150,7 @@ h2 {
 .bilde_wrapper {
     position: relative;
     transition: transform 0.3s ease;
+    width: 100%;
 }
 
 .overlay {
@@ -182,8 +185,7 @@ h2 {
     min-height: 130vh;
     max-width: 90%;
     margin: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
 }
 
 .recipies_container {
@@ -287,6 +289,27 @@ footer {
     .lokke_font {
         font-size: 200px;
     }
+
+    .balance {
+        flex-direction: column;
+        width: 65%;
+    }
+
+    .balance>img {
+        width: 100%;
+    }
+
+    .balance_container {
+        flex-direction: row;
+        height: 300px;
+        width: 100%;
+    }
+
+    .bilde_wrapper img {
+        width: 100%;
+    }
+
+
 }
 
 @media (width<800px) {
@@ -354,13 +377,17 @@ footer {
         font-size: 15px;
     }
 
-
-
-
+    .overlay h3 {
+        font-size: 15px;
+    }
 }
 
 @media (width<510px) {
     h1 {
         font-size: 100px;
+    }
+
+    .overlay h3 {
+        font-size: 10px;
     }
 }
