@@ -12,6 +12,11 @@
 
 }
 
+nav a:hover,
+.top a:hover {
+    background-color: var(--box-background);
+}
+
 .first,
 .second,
 .third {
@@ -56,7 +61,7 @@ h1 {
 }
 
 .info_nature {
-    max-width: 70%;
+    max-width: 60%;
     margin: auto;
     text-align: center;
     font-size: 25px;

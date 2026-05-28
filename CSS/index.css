@@ -4,6 +4,11 @@
 
 }
 
+nav a:hover,
+.top a:hover {
+    background-color: var(--bla-hover);
+}
+
 header {
     background-image: url(../bilder/background_2.jpeg);
     background-repeat: no-repeat;

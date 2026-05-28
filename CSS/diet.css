@@ -10,6 +10,11 @@
     --lighter-brown: rgb(79, 48, 48);
 }
 
+nav a:hover,
+.top a:hover {
+    background-color: var(--light-yellow);
+}
+
 body {
     background-color: var(--background-main);
 }
