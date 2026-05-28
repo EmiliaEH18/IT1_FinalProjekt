@@ -1,6 +1,8 @@
 :root {
     --bakgrunnfarge-bla: rgb(102, 178, 192);
     --bla-hover: rgb(95, 115, 193);
+    --gronnbla: rgb(91, 159, 169);
+    --cursive: rgb(162, 220, 220);
 
 }
 
@@ -89,14 +91,14 @@ header {
 
 .cursive {
     font-style: italic;
-    color: rgb(162, 220, 220);
+    color: var(--cursive);
 }
 
 .about_content {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    background-color: rgb(91, 159, 169);
+    background-color: var(--gronnbla);
     padding: 70px;
     z-index: 1;
     border-bottom-right-radius: 30%;
@@ -215,7 +217,7 @@ h5 {
 }
 
 footer {
-    background-color: var(--bla-hover);
+    background-color: var(--gronnbla);
 }
 
 
